@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Canonical Compatibility Relationship Record",
+  "type":"object",
+  "required":["record_id","subject","relation","object","conditions","evidence","sources","derivation","counterexamples","status","falsifier"],
+  "properties":{
+    "record_id":{"type":"string","minLength":1},
+    "subject":{"$ref":"#/$defs/endpoint"},
+    "relation":{"enum":["LEGAL","IMPOSSIBLE","CONDITIONAL","IMPLIED","EXCLUDED","SUPPORTIVE","OPPOSING","NEUTRAL","INDEPENDENT","UNRESOLVED","DERIVED","CONTEXT_DEPENDENT","SEQUENCE_DEPENDENT","LANGUAGE_DEPENDENT"]},
+    "object":{"$ref":"#/$defs/endpoint"},
+    "conditions":{"type":"array","items":{"type":"object"}},
+    "evidence":{"type":"array","items":{"type":"object"}},
+    "sources":{"type":"array","items":{"type":"object"}},
+    "derivation":{"type":"array","items":{"type":"object"}},
+    "counterexamples":{"type":"array","items":{"type":"object"}},
+    "status":{"enum":["CANDIDATE","SUPPORTED","VALIDATED","REJECTED","UNRESOLVED"]},
+    "falsifier":{"type":["object","string","null"]},
+    "notes":{"type":"string"}
+  },
+  "$defs":{"endpoint":{"type":"object","required":["canonical_id"],"properties":{"canonical_id":{"type":"string"},"character":{"type":["string","null"]},"value":{"type":["string","number","boolean","null"]}},"additionalProperties":false}},
+  "additionalProperties":false
+}
