@@ -1562,6 +1562,225 @@ themselves physical.
 
 
 ================================================================================
+       NONPHYSICAL REPRESENTATION FAMILIES AS STARTING PATHWAYS
+================================================================================
+
+The 103 explicit physical / phonetic representations are one grounded
+constraint space inside the complete 437-representation field. The other
+families can enter a derivation as identity, gating, selection, evidence,
+context, relation, measurement, or provenance. Their downstream effects
+are not assumed in advance.
+
+                         OCCURRENCE
+                              |
+                              v
+                   437-REPRESENTATION FIELD
+                              |
+       +----------------------+----------------------+
+       |                      |                      |
+       v                      v                      v
+ IDENTITY / NUMERIC      ORTHOGRAPHIC /        CONTEXTUAL /
+  groups 01-02            POSITIONAL             SITUATED
+       |                   group 11              group 19
+       |                      |                      |
+       +----------+-----------+-----------+----------+
+                  |                       |
+                  v                       v
+             IDENTIFY / GATE        CONDITION / SELECT
+                  |                       |
+                  +-----------+-----------+
+                              |
+                              v
+                 +-------------------------+
+                 | 103-D PHYSICAL/PHONETIC |
+                 |    LEGAL-STATE SPACE    |
+                 |      groups 03-06E      |
+                 +------------+------------+
+                              |
+                 +------------+------------+
+                 |                         |
+                 v                         v
+          PRONUNCIATION                ACOUSTICS
+             group 07                   group 08
+        select / resolve          measure / cross-check
+                 |                         |
+                 +------------+------------+
+                              |
+                              v
+                    AUDITABLE RESOLUTION
+
+
+Additional nonphysical starting pathways:
+
+  GLYPH / VISUAL (09A-09C)
+       -> independent visible realization
+       -> character-identity cross-check
+       -> geometry / topology / spatial evidence
+
+  CHARACTER CONFUSABILITY (10)
+       -> competing identity hypotheses
+       -> ambiguity / discrimination tests
+
+  CORPUS STATISTICS (12)
+       -> occurrence evidence
+       -> frequency / distribution / positional evidence
+       -> does not override physical impossibility
+
+  MORPHOLOGY (13)
+       -> condition lexical structure
+       -> identify invariant vs changing realizations
+       -> candidate context for pronunciation selection
+
+  GRAMMAR / SYNTAX (14)
+       -> condition grammatical role
+       -> constrain lexical/contextual interpretation
+       -> may reach physical realization only through an explicit bridge
+
+  SEMANTIC / LEXICAL (15)
+       -> lexical identity / sense relations
+       -> pronunciation or structural selection where evidenced
+       -> no direct physical assignment without a provenance path
+
+  PUNCTUATION / WRITING SYSTEM (16)
+       -> writing function / boundary / delimiter structure
+       -> gate pronunciation-bearing vs non-pronunciation-bearing states
+
+  PROGRAMMING-LANGUAGE ROLES (17)
+       -> formal symbolic role
+       -> controlled nonphonetic structural context
+       -> optional symbol-name relation through the lexicon
+
+  MATHEMATICAL-SYNTAX ROLES (18)
+       -> formal operator / delimiter / numeric role
+       -> controlled symbolic context
+       -> optional symbol-name relation through the lexicon
+
+  CHARACTER CAPABILITY DISTRIBUTIONS (20)
+       -> legal participation range
+       -> candidate alternatives / exclusions
+       -> never substitutes for occurrence-level resolution
+
+  EVIDENCE / PROVENANCE (21)
+       -> source, support, contradiction, derivation history
+       -> audit every transition and resolved state
+
+  SOURCE CLASSES (22)
+       -> identify evidence origin
+       -> keep independent evidence channels distinguishable
+
+
+================================================================================
+             CONTRAST + CONJUNCTION ACROSS REPRESENTATION FAMILIES
+================================================================================
+
+The same physical state can be approached from several evidence paths:
+
+ dictionary / pronunciation --------+
+ acoustic measurement --------------+--> compatible physical bundle
+ orthographic context --------------+
+ morphology / lexical identity -----+
+
+The same character can also be held constant while other families vary:
+
+ occurrence A                         occurrence B
+ -----------                          -----------
+ character identity   SAME            character identity
+ glyph identity       SAME            glyph identity
+                     -----
+ position             DIFFERENT       position
+ morphology           DIFFERENT       morphology
+ lexical context      DIFFERENT       lexical context
+                     -----
+ pronunciation        DIFFERENT       pronunciation
+ physical bundle      DIFFERENT       physical bundle
+
+This makes contrast a first-class operation:
+
+  HOLD selected representations constant
+                 +
+  VARY selected representations
+                 |
+                 v
+  OBSERVE which legal states change
+                 |
+                 v
+  candidate relationship / transformation
+                 |
+                 v
+              AUDIT
+
+Conjunction is the complementary operation:
+
+  identity + orthography + morphology + lexical context
+                         |
+                         v
+              intersect legal states
+                         |
+                         v
+              remaining candidates
+                         |
+                         v
+           pronunciation / acoustic check
+                         |
+                         v
+                 resolved bundle
+
+
+================================================================================
+                    TYPED PATHWAY DISCIPLINE
+================================================================================
+
+An arrow in this diagram does not automatically mean causation.
+
+Allowed starting roles include:
+
+  IDENTIFY      establish which object/character is under consideration
+  GATE          rule a representation family in or out
+  SELECT        choose among already-legal alternatives
+  CONDITION     narrow alternatives under explicit context
+  RELATE        connect independently represented structures
+  MEASURE       provide observed consequence/evidence
+  DISCRIMINATE  distinguish otherwise compatible candidates
+  MODULATE      change relevance/distribution without redefining identity
+  PROVENANCE    record why a state or transition is supported
+
+Therefore:
+
+  grammar ----------------X--> tongue position       (not assumed)
+
+but an evidenced path may be:
+
+  grammar
+     |
+     v
+  lexical/contextual interpretation
+     |
+     v
+  pronunciation
+     |
+     v
+  legal phonetic bundle
+     |
+     v
+  tongue / lips / larynx / airflow state
+
+Likewise:
+
+  "+" --------------------X--> phonetic cells
+
+while:
+
+  "+" --RELATE--> PLUS --lexicon--> pronunciation
+                              |
+                              v
+                       physical realization
+
+The diagram intentionally stops at these starting pathways. Further
+downstream consequences are separate derivations and must be established
+from evidence rather than filled in by diagram convention.
+
+
+================================================================================
                 STRUCTURAL INAPPLICABILITY AS EVIDENCE
 ================================================================================
 
