@@ -1,6 +1,6 @@
 """Canonical compatibility substrate, auditor, store and query engine."""
 from __future__ import annotations
-import json, base64, zlib
+import json, base64, zlib, hashlib
 from pathlib import Path
 
 RELATIONS={"LEGAL","IMPOSSIBLE","CONDITIONAL","IMPLIED","EXCLUDED","SUPPORTIVE","OPPOSING","NEUTRAL","INDEPENDENT","UNRESOLVED","DERIVED","CONTEXT_DEPENDENT","SEQUENCE_DEPENDENT","LANGUAGE_DEPENDENT"}
@@ -17,6 +17,8 @@ def _ensure_data(root):
         if not out.exists():
             encoded="".join((root/"data"/p).read_text(encoding="ascii").strip() for p in parts)
             raw=zlib.decompress(base64.b64decode(encoded))
+            expected={"canonical_registry.json":"8df3500fa4f1251c4adae17c7b78935c86d879cec74926515ba216df10c085b6","canonical_matrix.jsonl":"20955aa0a1842621312807e198d51f3df0e242e37a1e017bd08209033897ed8d"}[dst]
+            if hashlib.sha256(raw).hexdigest()!=expected: raise ValueError(f"canonical payload checksum failure: {dst}")
             out.write_bytes(raw)
 
 class CanonicalEngine:
