@@ -8,11 +8,15 @@ STATUSES={"CANDIDATE","SUPPORTED","VALIDATED","REJECTED","UNRESOLVED"}
 CELL_STATES={"X","1","0","E","R","M","U","V","K","S"}
 
 def _ensure_data(root):
-    pairs=[("canonical_registry.json.zlib.b64","canonical_registry.json"),("canonical_matrix.jsonl.zlib.b64","canonical_matrix.jsonl")]
-    for src,dst in pairs:
+    specs=[
+        (["canonical_registry.json.zlib.b64"],"canonical_registry.json"),
+        (["canonical_matrix.jsonl.zlib.b64.part1","canonical_matrix.jsonl.zlib.b64.part2"],"canonical_matrix.jsonl"),
+    ]
+    for parts,dst in specs:
         out=root/"data"/dst
         if not out.exists():
-            raw=zlib.decompress(base64.b64decode((root/"data"/src).read_text(encoding="ascii")))
+            encoded="".join((root/"data"/p).read_text(encoding="ascii").strip() for p in parts)
+            raw=zlib.decompress(base64.b64decode(encoded))
             out.write_bytes(raw)
 
 class CanonicalEngine:
