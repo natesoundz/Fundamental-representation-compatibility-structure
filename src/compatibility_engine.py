@@ -10,7 +10,7 @@ CELL_STATES={"X","1","0","E","R","M","U","V","K","S"}
 def _ensure_data(root):
     specs=[
         (["canonical_registry.json.zlib.b64"],"canonical_registry.json"),
-        (["canonical_matrix.jsonl.zlib.b64.part1","canonical_matrix.jsonl.zlib.b64.part2"],"canonical_matrix.jsonl"),
+        (["canonical_matrix.payload.1","canonical_matrix.payload.2","canonical_matrix.payload.3a","canonical_matrix.payload.3b","canonical_matrix.payload.4"],"canonical_matrix.jsonl"),
     ]
     for parts,dst in specs:
         out=root/"data"/dst
