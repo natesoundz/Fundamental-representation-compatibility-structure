@@ -1,5 +1,12 @@
 # Bidirectional Speech / Text Compatibility Example
 
+> **⚠️ DEPRECATION / CANONICAL AUTHORITY NOTICE**
+>
+> **All former ASCII95 representation substrates—including the 95×192, 95×254, and any superseded intermediate matrix/registry versions—are DEPRECATED and MUST NOT be used as the execution, compilation, or experimental substrate for current work. They are retained only as historical lineage where referenced.**
+>
+> **CURRENT AUTHORITY: use the most recent functioning Canonical ASCII95 workbook (95 printable ASCII characters × 437 canonical representation dimensions) and its current 103-piece physical system. The canonical workbook itself is authoritative; derived exports, older matrices, diagrams, and historical compiler artifacts do not override it.**
+
+
 This document extends the explicit-character architecture with a concrete bidirectional traversal through the same compatibility network.
 
 The example uses the word `SAFE`. The important claim is not that speech recognition or speech synthesis is new. The architectural claim being tested is whether the canonical explicit representation system can serve as a shared, inspectable intermediate state connecting acoustic evidence, physical articulation, phonetic realization, pronunciation, orthography, and text.
