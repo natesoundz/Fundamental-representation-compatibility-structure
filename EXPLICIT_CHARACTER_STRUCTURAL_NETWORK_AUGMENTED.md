@@ -1,5 +1,12 @@
 # Augmented Explicit Character / Structural Network
 
+> **⚠️ DEPRECATION / CANONICAL AUTHORITY NOTICE**
+>
+> **All former ASCII95 representation substrates—including the 95×192, 95×254, and any superseded intermediate matrix/registry versions—are DEPRECATED and MUST NOT be used as the execution, compilation, or experimental substrate for current work. They are retained only as historical lineage where referenced.**
+>
+> **CURRENT AUTHORITY: use the most recent functioning Canonical ASCII95 workbook (95 printable ASCII characters × 437 canonical representation dimensions) and its current 103-piece physical system. The canonical workbook itself is authoritative; derived exports, older matrices, diagrams, and historical compiler artifacts do not override it.**
+
+
 This is a copy-and-augmentation of the original plain-text configuration diagram in `EXPLICIT_CHARACTER_STRUCTURAL_NETWORK.md`.
 
 **Color key:** <span style="color:#d97706"><strong>[NEW—PHYSICAL/AUDIO]</strong></span> marks structures added after re-evaluating the canonical 437-representation workbook. GitHub renderers that suppress inline color still retain the explicit marker.
