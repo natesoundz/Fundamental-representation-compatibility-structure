@@ -1,5 +1,12 @@
 # Fundamental Representation Compatibility Structure
 
+> **⚠️ DEPRECATION / CANONICAL AUTHORITY NOTICE**
+>
+> **All former ASCII95 representation substrates—including the 95×192, 95×254, and any superseded intermediate matrix/registry versions—are DEPRECATED and MUST NOT be used as the execution, compilation, or experimental substrate for current work. They are retained only as historical lineage where referenced.**
+>
+> **CURRENT AUTHORITY: use the most recent functioning Canonical ASCII95 workbook (95 printable ASCII characters × 437 canonical representation dimensions) and its current 103-piece physical system. The canonical workbook itself is authoritative; derived exports, older matrices, diagrams, and historical compiler artifacts do not override it.**
+
+
 ## Purpose
 
 This repository is a public research record for an investigation into **explicit representation and compatibility**.
